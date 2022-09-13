@@ -1,7 +1,7 @@
     // -------problem 01-----------------
     // solve the provlem with javascript to find the maximum between two numbers
 
-    let number = max ( 11120, 3400);
+    let number = max ( 111, 3400);
 
     console.log(number);
 
@@ -76,7 +76,25 @@
      }
 
     // problem 06
-    //solve the problem with Javascript to check whether a character is in the alphabet or not.    solve hoyni, baki ase
+    //solve the problem with Javascript to check whether a character is in the alphabet or not.    [solve hoyni, baki ase]
+
+    function alphanumeric(inputtxt)
+    { 
+    var letters = /^[0-9a-zA-Z]+$/;
+    if(inputtxt.value.match(letters)){
+        console.log("this is a letter")
+    }else {
+        console.log("this is not an Alphabet")
+    }
+    }
+
+
+
+
+
+
+
+
 
     
 
@@ -99,23 +117,25 @@
     }
 
 
-    // // -------------problem 08---------------- 
-    // let math = 95;             solve hoyni, baki ase
-    // let english = 92;
-    // let physics = 82;
+    // // -------------problem 08----------------
 
-    // let totalMarks = math + english + physics / 3;
+    let math = 90;
+    let english = 65;
+    let science = 85;
 
-    // console.log(parseInt(totalMarks));
+    let totalMarks = math + english + science;
 
+    console.log(totalMarks);
 
-    // if (totalMarks => 270) {
-    //     console.log("You Got Grade A");
-
-    // }  else if (totalMarks => 250) {
-    //         console.log("You Got Grade B");
-    //     }
-   
+    if (totalMarks >= 270) {
+        console.log("You Got A+");
+    } else if(totalMarks >= 250) {
+        console.log("You Got B+");
+    } else if(totalMarks >= 230) {
+        console.log("You Got C");
+    } else  {
+        console.log("You Are FAIL");
+    }
 
 
     // ----------------problem 09-------------------------
@@ -144,6 +164,6 @@
         movies: "onkeMovieKoreVai",
     }
 
-    console.log(bike, fruit, bollywood); 
+    // console.log(bike, fruit, bollywood); 
 
-    // console.log(bike.brand, fruit["import"], bollywood.movies); 
+    console.log(bike.brand, fruit, bollywood.movies); 
