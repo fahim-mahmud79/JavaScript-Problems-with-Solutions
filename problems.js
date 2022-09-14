@@ -78,25 +78,25 @@
     // problem 06
     //solve the problem with Javascript to check whether a character is in the alphabet or not.    [solve hoyni, baki ase]
 
-    function alphanumeric(inputtxt)
-    { 
-    var letters = /^[0-9a-zA-Z]+$/;
-    if(inputtxt.value.match(letters)){
-        console.log("this is a letter")
-    }else {
-        console.log("this is not an Alphabet")
-    }
-    }
+    // function alphanumeric(inputtxt)
+    // { 
+    // var letters = /^[0-9a-zA-Z]+$/;
+    // if(inputtxt.value.match(letters)){
+    //     console.log("this is a letter")
+    // }else {
+    //     console.log("this is not an Alphabet")
+    // }
+    // }
+
+     let char = "*"
+     
+     if (char =>[a-zA-Z]) {
+        console.log("this is an Alphabet")
+     } else {
+        console.log("It is not an Alphabet")
+     }
 
 
-
-
-
-
-
-
-
-    
 
     //------------------problem 07----------------
     // solve the provlem with javascript to check weather the temperature hot, normal or cold
@@ -167,3 +167,95 @@
     // console.log(bike, fruit, bollywood); 
 
     console.log(bike.brand, fruit, bollywood.movies); 
+
+
+    // More problems down there..
+
+    //-------------Problem 11--------------solved
+    // Create a while loop which prints values from 10 to 50
+
+    // solve kora ase, sudu comment out korlei hobe.
+
+    // let j = 10;
+
+    // while (j <= 50) {
+    //     console.log(j);
+    //     j++;
+    // }
+
+
+    //-------------problem 12--------------solved
+    //Create a for loop which prints values from 20 to 60
+    
+    // solve kora ase, sudu comment out korlei hobe. 
+
+    // for (let i = 20; i <= 60; i++) {
+    //     console.log(i);
+    // }
+
+
+    //--------------problem 13--------------
+    //Create a function of adding two numbers
+
+    function add(black, stone) {
+        console.log(black + stone);
+    }
+
+    add(23, 32);
+    add(200, 200);
+    add(2, 1)
+
+    //--------------problem 14-----------------
+    //Create a function which returns a for loop which takes two parameter one is initial value & final value to return the list of number from initial to final value
+
+    function forLoop(initialValue, finalValue) {
+        for(let k = initialValue; k <= finalValue; k++){
+            console.log(k);
+        }
+    }
+
+    // forLoop(20, 40);    uncomment these to see the answers
+    // forLoop(5, 10);     uncomment these to see the answers
+
+
+
+    // ---------------problem 15-----------------
+    // Create a function which return whether the year is leap year or not
+
+    function leapYear(year) {
+        if (year % 4 ==0 ) {
+            console.log("this is a LeapYear");
+        } else {
+            console.log("this is not a LeapYear");
+        }
+    } 
+
+    leapYear(2022);
+
+    //----------problem 16-----------
+    //Create a function which return whether the temperature is hot or cold 
+    //hint:  (30 <=  is hot, 25 >= is cold , anyother value is normal)
+    
+    function findtemperature(degree) {
+        if(degree >= 30) {
+            console.log("Temperature is Hot");
+        } else if (degree <= 25) {
+            console.log("the temperature is Cold");
+        } else {
+            console.log("the temperature is Normal");
+        }
+    }
+
+    findtemperature(25);
+
+
+    // ------------problem 17------------
+    // Create a function which returns whether the number is odd or even
+
+    let findthenumber = 33;
+
+    if (findthenumber % 2 == 0) {
+        console.log(findthenumber, "is an even humber");
+    } else {
+        console.log(findthenumber, "is an odd number");
+    }
