@@ -75,7 +75,7 @@
         console.log("this number is odd")
      }
 
-    // problem 06
+    // ----------------problem 06--------------------
     //solve the problem with Javascript to check whether a character is in the alphabet or not.    [solve hoyni, baki ase]
 
     // function alphanumeric(inputtxt)
@@ -209,7 +209,7 @@
     //Create a function which returns a for loop which takes two parameter one is initial value & final value to return the list of number from initial to final value
 
     function forLoop(initialValue, finalValue) {
-        for(let k = initialValue; k <= finalValue; k++){
+        for(let k = initialValue; k <= finalValue; k++) {
             console.log(k);
         }
     }
@@ -259,3 +259,7 @@
     } else {
         console.log(findthenumber, "is an odd number");
     }
+
+
+
+
